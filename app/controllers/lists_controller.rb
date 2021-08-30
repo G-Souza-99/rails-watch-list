@@ -25,7 +25,7 @@ class ListsController < ApplicationController
 
   def destroy
     @list.destroy
-    redirect_to lists_path(@list)
+    redirect_to lists_path
   end
 
   private
@@ -38,4 +38,3 @@ class ListsController < ApplicationController
     params.require(:list).permit(:name)
   end
 end
-# ok
